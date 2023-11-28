@@ -1,5 +1,63 @@
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* UTILS */
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  /* debug */
+  height: 100%;
+  background-color: aqua;
+}
+
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+
+header {
+  height: 90px;
+  background-color: orange;
+}
+
+
+
+/* MAIN */
+
+.main-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.card {
+  height: 100px;
+  border: 2px dashed black;
+  background-color: grey;
+}
+
+/* FOOTER */
+footer {
+  height: 110px;
+  background-color: #080808;
 }
