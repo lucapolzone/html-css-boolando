@@ -10,21 +10,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
 
 /* UTILS */
 
 .wrapper {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
-  /* debug */
-  height: 100%;
-  background-color: aqua;
+  display: flex;
+  background-color: rgb(95, 76, 85);
 }
 
 a:link,
 a:visited {
   color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -34,24 +37,68 @@ a:hover {
 /* HEADER */
 
 header {
-  height: 90px;
+  height: 70px;
+  display: flex;
   background-color: orange;
 }
 
+
+/* HEADER elements */
+
+header nav {
+  width: 15%;
+  min-width: 200px;
+  /* debug */
+  border: 2px dashed white;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper.wrapper-header {
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header--logo {
+  /* debug */
+  border: 2px dashed white;
+}
+
+#header--logo img {
+  height: 40px;
+}
+
+#header--login {
+  width: 10%;
+  /* debug */
+  border: 2px dashed white;
+}
+
+#header--login ul {
+  display: flex;
+  justify-content: space-around;
+}
 
 
 /* MAIN */
 
 .main-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 500px;
+  /* debug */
+  display: block;
 }
 
 
 
 
 .card {
-  height: 100px;
+  height: 70px;
   border: 2px dashed black;
   background-color: grey;
 }
@@ -60,4 +107,8 @@ header {
 footer {
   height: 110px;
   background-color: #080808;
+}
+
+.wrapper.footer-wrapper {
+  height: 100px;
 }
