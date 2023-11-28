@@ -54,11 +54,10 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .wrapper.wrapper-header {
-  padding: 0 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -73,14 +72,18 @@ header nav ul {
 }
 
 #header--login {
-  width: 10%;
+  width: 15%;
   /* debug */
   border: 2px dashed white;
 }
 
 #header--login ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+
+#header--login li {
+  margin-left: 10px;
 }
 
 
